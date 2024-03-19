@@ -1,0 +1,106 @@
+.ourservice {
+  padding: 100px 8.9%;
+  text-align: center;
+}
+.section-title {
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.OurService-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 27px;
+}
+.service-col .fa {
+  width: 170px;
+  height: 100px;
+  color: var(--primary);
+  transition: 0.6s;
+}
+.service-col .fa:hover {
+  color: #000;
+}
+.OurService-row .service-col h3 {
+  font-size: 25px;
+  margin-top: 20px;
+}
+.OurService-row .service-col p {
+  font-size: 17px;
+  color: var(--gray);
+}
+.OurService-row .service-col button {
+  margin-top: 22px;
+}
+.service-col::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  bottom: 0;
+  height: 0%;
+  width: 100%;
+  z-index: -1;
+  background: var(--primary);
+  transition: 0.6s;
+}
+.service-col:hover::after {
+  height: 100%;
+}
+.OurService-row .service-col {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  /* transition: 0.6s ; */
+}
+
+/* .underlay-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0%;
+  width: 100%;
+  z-index: -1;
+  background: var(--primary);
+  transition: 0.6s ease-out;
+}
+.underlay-background:hover .fa {
+  color: #000;
+}
+
+.OurService-row .service-col:hover .underlay-background {
+  height: 100%;
+} */
+.OurService-row .service-col:hover p {
+  color: #fff;
+  transition: 0.7s ease-out;
+}
+
+.OurService-row .service-col:hover h3 {
+  color: #000;
+}
+
+.OurService-row .service-col:hover button {
+  background: #fff;
+  transition: 1s ease-in;
+}
+.OurService-row .service-col:hover .fa {
+  color: #000;
+  transition: 0.1s ease-in-out;
+}
+@media (max-width: 990px) {
+  .OurService-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ourservice {
+    padding: 100px 15%;
+  }
+}
+@media (max-width: 550px) {
+  .ourservice h2 {
+    font-size: 30px;
+  }
+  .OurService-row {
+    grid-template-columns: 1fr;
+  }
+}

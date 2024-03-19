@@ -1,0 +1,15 @@
+.slide {
+  position: relative;
+  display: none;
+}
+.slider {
+  position: relative;
+  max-width: 500px;
+  overflow: hidden;
+}
+.slide.active {
+  display: block;
+}
+.slide img {
+  width: 100%;
+}

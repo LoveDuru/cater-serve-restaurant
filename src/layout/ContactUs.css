@@ -1,0 +1,75 @@
+.contactsection {
+  padding: 8.9%;
+}
+.section-title {
+  margin-left: auto;
+}
+
+.contactformcontainer {
+  background: var(--light);
+  padding: 50px;
+}
+.contactformcontainer h1 {
+  font-size: 45px;
+  margin-bottom: 30px;
+  margin-top: 16px;
+}
+.contactusrow {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+.contactusrow .contactform {
+  flex: 1 1 26rem;
+  /* border: 1px solid goldenrod; */
+}
+.contactform input,
+.contactform textarea,
+.contactform button {
+  width: 100%;
+  padding: 18px;
+  outline: none;
+  background: none;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  border: 1px solid var(--primary);
+}
+.contactform button {
+  background: var(--primary);
+  margin-top: 5px;
+  padding: 16px;
+  font-size: 17px;
+  border-radius: 45px;
+}
+.details {
+  flex: 1 1 13rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.detailcol {
+  display: flex;
+  padding: 20px;
+  margin-bottom: 25px;
+  border: 1px solid var(--primary);
+  line-height: 1.8;
+  border-radius: 8px;
+}
+.detailcol .info {
+  margin-left: 20px;
+}
+.info h4 {
+  font-size: 22px;
+}
+.info p {
+  font-size: 18px;
+}
+.detailcol strong {
+  font-size: 20px;
+  /* font-weight: bold; */
+}
+.contact-fa {
+  font-size: 40px;
+  color: var(--primary);
+}

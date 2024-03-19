@@ -1,0 +1,125 @@
+.navbar {
+  padding: 0 8.9%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  background: var(--light);
+  overflow: visible;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.logo a {
+  font-size: 35px;
+  color: var(--primary);
+  font-family: "Playball", cursive;
+}
+.logo span {
+  color: #000;
+  font-family: "Playball", cursive;
+}
+.logo a {
+  text-decoration: none;
+}
+.navbar .toggle-btn {
+  display: none;
+}
+.navbar .links {
+  display: flex;
+  gap: 16px;
+}
+.links a {
+  color: rgb(49, 46, 46);
+  font-size: 18px;
+  padding: 10px 5px;
+  text-decoration: none;
+}
+.links a.active {
+  color: var(--primary);
+}
+.nav .pages {
+  position: relative;
+}
+.nav .dropdown-menu {
+  padding: 10px 0;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  width: 140px;
+  background: var(--light);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  visibility: hidden;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0.4s;
+}
+.nav .dropdown-menu.show {
+  visibility: visible;
+  transform: scaleY(1);
+  opacity: 1;
+}
+.nav .dropdown-menu a {
+  display: block;
+  font-size: 18px;
+  padding: 8px 8px;
+}
+.nav .dropdown-menu a:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+.nav .search {
+  border-radius: 50%;
+  padding: 0;
+  height: 44px;
+  width: 44px;
+  margin-right: 23px;
+}
+.dropdown-menu a.active {
+  color: #000;
+}
+
+@media (max-width: 990px) {
+  .logo a {
+    font-size: 30px;
+  }
+  .navbar .toggle-btn {
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    line-height: 0.4;
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    background: var(--light);
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+  }
+  .navmenu-icon {
+    color: var(--primary);
+  }
+  .navbar .links {
+    flex-direction: column;
+    transform: scaleY(0);
+    display: none;
+    transform-origin: top;
+    transition: 0.3s;
+  }
+  .navbar .links.show {
+    transform: scaleY(1);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar .searchandbook {
+    display: none;
+  }
+  .nav {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}

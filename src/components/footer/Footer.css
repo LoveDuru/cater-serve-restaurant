@@ -1,0 +1,33 @@
+.footer {
+  padding: 20px 83px;
+  background: #000;
+  text-align: center;
+}
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-row p {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.firstpara {
+  display: flex;
+  align-items: center;
+}
+.footer-row span {
+  text-transform: capitalize;
+  color: goldenrod;
+}
+.copyrightfooter {
+  margin-right: 5px;
+  font-size: 14px;
+}
+@media (max-width: 990px) {
+  .footer-row {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}

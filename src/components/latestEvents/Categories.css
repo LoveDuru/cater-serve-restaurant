@@ -1,0 +1,32 @@
+.btn-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 50px 0;
+}
+
+.btn-container .cat-btn {
+  text-decoration: none;
+  color: #000;
+  background: var(--light);
+  width: 156px;
+  font-size: 19px;
+  font-weight: 100;
+  padding: 8px 0;
+  text-align: center;
+  border: 1px solid var(--primary);
+  outline: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.btn-container .cat-btn.active {
+  background: var(--primary);
+}
+
+@media (max-width: 990px) {
+  .btn-container .cat-btn {
+    width: 125px;
+    font-size: 16px;
+  }
+}

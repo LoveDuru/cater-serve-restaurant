@@ -1,0 +1,49 @@
+.bookus-container {
+  padding: 80px 8.9%;
+}
+.bookus-banner {
+  width: 100%;
+  background-image: url(../../assets/img/background-site.jpg);
+  background-position-x: 15%;
+  background-repeat: repeat;
+  padding: 0 96px;
+  border-radius: 8px;
+}
+.form {
+  width: 100%;
+  padding: 52px 25px;
+  background: var(--light);
+  text-align: center;
+  border-top: 1px solid var(--primary);
+  border-bottom: 1px solid var(--primary);
+}
+.form h2 {
+  margin-bottom: 44px;
+  margin-top: 20px;
+}
+.fields-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+select,
+input {
+  padding: 10px;
+  background: white;
+  border: 1px solid goldenrod;
+  font-size: 17px;
+  color: gray;
+  border-radius: 8px;
+}
+
+.form .btn {
+  padding: 19px 48px;
+  font-size: 15px;
+  border-radius: 31px;
+  margin-top: 25px;
+}
+@media (max-width: 990px) {
+  .bookus-banner {
+    padding: 0 50px;
+  }
+}

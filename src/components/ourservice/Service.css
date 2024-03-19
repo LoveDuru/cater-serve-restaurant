@@ -1,0 +1,18 @@
+.service-col {
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0px 0px 10px 5px rgba(197, 187, 187, 0.2);
+  position: relative;
+  transition: 0.6s ease-in-out;
+  background: var(--light);
+  z-index: 1;
+
+  cursor: pointer;
+}
+.service-col h3 {
+  font-size: 21px;
+  margin: 10px 0;
+}
+.service-col p {
+  font-size: 16px;
+}

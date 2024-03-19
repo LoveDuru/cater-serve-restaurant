@@ -1,0 +1,92 @@
+.events {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  position: relative;
+}
+.image-list {
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s;
+}
+.img-col {
+  width: 100%;
+  display: block;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(218, 165, 32, 0.26);
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+.image-list:hover .overlay {
+  visibility: visible;
+  opacity: 1;
+}
+.overlay h4 {
+  font-size: 26px;
+  font-weight: normal;
+  padding: 20px 20px;
+}
+
+.events button {
+  font-weight: bold;
+  background: none;
+  cursor: pointer;
+  border: none;
+}
+.events-searchicon {
+  font-size: 28px;
+  color: #000;
+}
+
+/* modal styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+  position: relative;
+  max-width: 80%;
+  max-height: 80%;
+  overflow: hidden;
+}
+.modal img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 50;
+}
+.modal button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+@media (max-width: 990px) {
+  .events {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 550px) {
+  .events {
+    grid-template-columns: 1fr;
+  }
+}

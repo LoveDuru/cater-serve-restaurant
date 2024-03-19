@@ -1,0 +1,90 @@
+.ourteam {
+  padding: 100px 8.9%;
+  text-align: center;
+}
+.ourteam h2 {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+.ourteam-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.ourteam-col {
+  flex-basis: 23%;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 25px;
+  /* transition: 0.7s ease-in; */
+}
+.ourteam-col img {
+  width: 100%;
+  display: block;
+}
+.chefdetails {
+  padding: 20px;
+  background: #000;
+  color: var(--primary);
+
+  transition: 0.6s ease-out;
+}
+.teamsocialiconcontainer {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: block;
+  margin-bottom: 10px;
+}
+.teamsocialiconcontainer .teamsocialbox {
+  display: block;
+  margin-bottom: 8px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2.7;
+  background: var(--primary);
+}
+.teammediaIcons {
+  font-size: 16px;
+  color: #000;
+}
+.teamsocialiconcontainer .teamsocialbox:not(:first-child) {
+  opacity: 0;
+  transition: 0.6s ease-out;
+}
+.chefdetails h3 {
+  font-size: 25px;
+}
+.chefdetails p {
+  color: #fff;
+  margin-top: 10px;
+  font-size: 18px;
+}
+.ourteam-col:hover .chefdetails {
+  background: var(--primary);
+}
+.ourteam-col:hover .teamsocialiconcontainer .teamsocialbox {
+  opacity: 1;
+}
+.ourteam-col:hover .chefdetails h3 {
+  color: #000;
+}
+@media (max-width: 990px) {
+  .ourteam-col {
+    flex-basis: 48%;
+  }
+  .ourteam h2 {
+    font-size: 38px;
+  }
+  .chefdetails h3 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 550px) {
+  .ourteam-col {
+    flex-basis: 100%;
+  }
+}
